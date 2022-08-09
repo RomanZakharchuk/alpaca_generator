@@ -1,6 +1,12 @@
+import css from './ImageSection.module.scss';
+import {Image, ImageBtnGroup} from "../../components";
+
 const ImageSection = () => {
     return (
-        <div>ImageSection</div>
+        <div className={css.imageSection}>
+            <Image/>
+            <ImageBtnGroup/>
+        </div>
     )
 }
 

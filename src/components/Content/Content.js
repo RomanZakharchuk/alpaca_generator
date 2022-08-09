@@ -1,6 +1,13 @@
+import css from './Content.module.scss';
+import {ImageSection, ManipulationSection} from "../../components";
+
+
 const Content = () => {
     return (
-        <div>Content</div>
+        <div className={css.content}>
+            <ImageSection/>
+            <ManipulationSection/>
+        </div>
     )
 }
 

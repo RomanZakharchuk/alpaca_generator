@@ -1,0 +1,15 @@
+.btnGroup {
+  margin-top: 25px;
+
+  button {
+    border: 1px solid white;
+    padding: 15px 30px;
+    margin-right: 10px;
+    background: white;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid gray;
+    }
+  }
+}

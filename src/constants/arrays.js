@@ -1,4 +1,4 @@
-const initialState = {
+const defaultImage = {
     backgrounds: "darkblue70",
     neck: "default",
     ears: "default",
@@ -7,6 +7,7 @@ const initialState = {
     mouth: "default",
     leg: "default",
     accessories: "earings",
+    nose: "nose"
 };
 
 const options = [
@@ -86,7 +87,7 @@ const images = {
 };
 
 export {
-    initialState,
+    defaultImage,
     options,
     images
 }
