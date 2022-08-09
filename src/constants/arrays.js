@@ -1,15 +1,3 @@
-const defaultImage = {
-    backgrounds: "darkblue70",
-    neck: "default",
-    ears: "default",
-    hair: "default",
-    eyes: "default",
-    mouth: "default",
-    leg: "default",
-    accessories: "earings",
-    nose: "nose"
-};
-
 const options = [
     "backgrounds",
     "neck",
@@ -87,7 +75,6 @@ const images = {
 };
 
 export {
-    defaultImage,
     options,
     images
 }

@@ -1,0 +1,29 @@
+.btnGroup {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+
+  .btn {
+    border: 1px solid #ACC7F4;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #ACC7F4;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      border-color: #5e96ff;
+      color: #5e96ff;
+    }
+  }
+}
+
+.emptyText {
+  border: 1px solid #ACC7F4;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 28px;
+  color: #ACC7F4;
+  margin-top: 10px;
+}

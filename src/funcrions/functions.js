@@ -1,0 +1,1 @@
+export const incFirstLetter = values => values.charAt(0).toUpperCase() + values.slice(1);
