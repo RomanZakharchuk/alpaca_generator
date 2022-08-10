@@ -20,11 +20,57 @@ const initialState = {
 const imageSlice = createSlice({
     name: 'imageSlice',
     initialState,
-    reducers: {}
+    reducers: {
+        changeHair: (state, action) => {
+            state.defaultImage.hair = action.payload
+        },
+        changeEars: (state, action) => {
+            state.defaultImage.ears = action.payload
+        },
+        changeEyes: (state, action) => {
+            state.defaultImage.eyes = action.payload
+        },
+        changeMouth: (state, action) => {
+            state.defaultImage.mouth = action.payload
+        },
+        changeNeck: (state, action) => {
+            state.defaultImage.neck = action.payload
+        },
+        changeLeg: (state, action) => {
+            state.defaultImage.leg = action.payload
+        },
+        changeAccessories: (state, action) => {
+            state.defaultImage.accessories = action.payload
+        },
+        changeBackground: (state, action) => {
+            state.defaultImage.backgrounds = action.payload
+        }
+    }
 });
 
-const {reducer: imageReducer} = imageSlice;
+const {reducer: imageReducer, actions: {
+    changeHair,
+    changeNeck,
+    changeMouth,
+    changeLeg,
+    changeEyes,
+    changeEars,
+    changeAccessories,
+    changeBackground
+}} = imageSlice;
+
+const imageActive = {
+    changeHair,
+    changeNeck,
+    changeMouth,
+    changeLeg,
+    changeEyes,
+    changeEars,
+    changeAccessories,
+    changeBackground
+};
 
 export {
-    imageReducer
+    imageReducer,
+    imageActive
 }
