@@ -4,7 +4,7 @@ import css from "./style.module.scss";
 import {incFirstLetter} from "../funcrions";
 import {imageActive} from "../redux/slices";
 
-const Ears = () => {
+const Ears = ({activeButton, active}) => {
     const {images} = useSelector(state => state.images);
     const {values} = images.ears;
     const dispatch = useDispatch();
@@ -13,8 +13,11 @@ const Ears = () => {
         <div className={css.btnGroup}>
             {values.map((ears, index) => <button
                 key={index}
-                className={css.btn}
-                onClick={() => dispatch(imageActive.changeEars(ears))}
+                className={active === ears ? 'active' : ''}
+                onClick={() => {
+                    dispatch(imageActive.changeEars(ears));
+                    activeButton(ears);
+                }}
             >{incFirstLetter(ears)}</button>)}
         </div>
     )

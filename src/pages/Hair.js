@@ -4,7 +4,7 @@ import css from './style.module.scss';
 import {incFirstLetter} from "../funcrions";
 import {imageActive} from "../redux/slices";
 
-const Hair = () => {
+const Hair = ({activeButton, active}) => {
     const {images} = useSelector(state => state.images);
     const {values} = images.hair;
 
@@ -14,7 +14,11 @@ const Hair = () => {
         <div className={css.btnGroup}>
             {values.map((hair, index) => <button
                 key={index}
-                onClick={() => dispatch(imageActive.changeHair(hair))}
+                className={active === hair ? 'active' : ''}
+                onClick={() => {
+                    dispatch(imageActive.changeHair(hair));
+                    activeButton(hair);
+                }}
             >{incFirstLetter(hair)}</button>)}
         </div>
     )
