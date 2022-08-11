@@ -5,3 +5,5 @@ export * from './ImageBtnGroup/ImageBtnGroup';
 export * from './ImageSection/ImageSection';
 export * from './ManipulationAccessorize/ManipulationAccessorize';
 export * from './ManipulationSection/ManipulationSection';
+export * from './BtnDownload/BtnDownload';
+export * from './BtnRandom/BtnRandom';
